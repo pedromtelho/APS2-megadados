@@ -1,8 +1,6 @@
+# pylint: disable=too-few-public-methods
 from pydantic import BaseModel, Field
 from typing import Optional, Dict
-
-# pylint: disable=too-few-public-methods
-
 
 class Task(BaseModel):
     description: Optional[str] = Field(
