@@ -19,7 +19,7 @@ async def read_tasks(completed: bool = None, db: DBSession = Depends(get_db)):
         return db.tasks
     return {
         uuid_: item
-        for uuid_, item in db.tasks.items() if item.completed == completed
+        for uuid_, item in db.tasks.items() if item["completed"] == completed
     }
 
 
