@@ -19,5 +19,4 @@ app.include_router(
     task.router,
     prefix="/task",
     tags=["task"],
-    responses={404: {"description": "Not found"}},
 )
